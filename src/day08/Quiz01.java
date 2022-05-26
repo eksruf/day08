@@ -8,11 +8,12 @@ public static void main(String[] args) {
 	System.out.println(str);
 	str = str.replace("-", ":"); //-를 :로 변경
 	String[] arrStr =  str.split("\n"); // \n을 기준으로 자름
-	str=""; 
+	//arrStr[0] = 김개똥:2017년 arrStr[1] = 홍길동구리:2015년 arrStr[2] =선우선녀:2018년
+	str=""; //str초기화
+	
 	for (int i=0; i<arrStr.length;i++) {
 		String[] reStr = arrStr[i].split(":");
-		//arr[0]이 들어오면서 :를 기준으로 나뉘어짐 
-		//arr[0] = "김개똥:2017년
+		//arrStr[0]이 들어오면서 :를 기준으로 나뉘어짐 
 		//나누어진 아이들 reStr[0] = 김개똥  , reStr[1] =2017년 
 		reStr[1]=reStr[1].replace(reStr[1], "1999년");
 		
